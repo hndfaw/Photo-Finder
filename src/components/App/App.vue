@@ -1,11 +1,7 @@
 <template>
   <div id="app">
-    <h1>This is my photo finder app!</h1>
+      <FindImages v-on:run-search="runSearching" />
       <ImagesContainer v-bind:images="images"/>
-      <FindImages />
-      <!-- <div v-for="image in images" :key="image.id">
-        <img v-bind:src=" 'https://image.tmdb.org/t/p/w500' +image.poster_path" alt="">
-      </div> -->
   </div>
 </template>
 
