@@ -1,0 +1,15 @@
+#footer {
+  height: 50px;
+  background: rgb(233, 226, 226);
+}
+
+.pages-footer {
+  border: 1px solid red;
+  height: 100%;
+  width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
