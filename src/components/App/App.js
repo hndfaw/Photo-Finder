@@ -1,4 +1,4 @@
-import { fetchImages } from '../../api/apiCalls';
+import { fetchImages, fetchRandomImages } from '../../api/apiCalls';
 import ImagesContainer from '../imagesContainer/ImagesContainer.vue';
 import FindImages from '../findImages/FindImages.vue'
 
@@ -21,6 +21,11 @@ export default {
       fetchImages(param)
         .then(images => {this.images = images.results; console.log(images.results)})      
     }
+  },
+
+  created() {
+    fetchRandomImages()
+    .then(images => this.images = images)
   }
 
 }

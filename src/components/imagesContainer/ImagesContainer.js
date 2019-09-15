@@ -4,12 +4,19 @@ export default {
   data() {
     return  {
       isPhotoOpened: false,
+      currentImgUrl: '',
+      linkToDownload: ''
     }
   },
 
   methods: {
-    toggleOpenSingPhoto() {
+    toggleOpenSingPhoto(params) {
       this.isPhotoOpened = !this.isPhotoOpened;
+      this.currentImgUrl = params.url,
+      this.linkToDownload = params.link
+    },
+    downloadPhoto() {
+      return this.linkToDownload
     }
   }
 }

@@ -20,10 +20,39 @@
   position: absolute;
   bottom: 50px;
   right: 50px;
-  font-size: 20px;
+  font-size: 35px;
   outline: none;
 }
 
 .close-single-photo-btn:hover {
   background: rgba(255, 255, 255, 0.76);
+}
+
+.single-imgae-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.835);
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.is-closed {
+  display: none;
+}
+
+
+.full-size-img {
+  margin-left: auto;
+  margin-right: auto;  
+  border: 1px solid #fff;
+}
+
+.download-btn {
+  width: 200px;
+  height: 200px;
 }
