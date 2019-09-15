@@ -1,8 +1,8 @@
 <template>
   <footer id="footer">
     <div class="pages-footer">
-      <button>Previous</button>
-      <button>Next</button>
+      <button class="prev-next-btn">Previous</button>
+      <button class="prev-next-btn">Next</button>
     </div>
   </footer>
 </template>
