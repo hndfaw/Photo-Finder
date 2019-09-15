@@ -1,4 +1,4 @@
-# photo-finder
+# Photo Finder
 
 ## Project setup
 ```
