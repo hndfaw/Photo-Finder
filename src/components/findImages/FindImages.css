@@ -68,6 +68,14 @@
   color: #fff;
   background: rgb(51, 83, 94);
   border: none;
+}
 
+.logo {
+  color: #fff;
+  margin-left: 20px;
+}
+
+.logo-finder {
+  color: rgb(236, 236, 58);
 }
 
