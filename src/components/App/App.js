@@ -1,11 +1,13 @@
 import { fetchFilms } from '../../api/apiCalls';
 import ImagesContainer from '../imagesContainer/ImagesContainer.vue';
+import FindImages from '../findImages/FindImages.vue'
 
 
 export default {
   name: 'app',
   components: {
-    ImagesContainer
+    ImagesContainer,
+    FindImages
   },
 
   data() {
