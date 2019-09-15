@@ -8,8 +8,8 @@
         </div>
     </div>
     <div class="single-imgae-container" v-bind:class="{'is-closed': !isPhotoOpened}">
-      <img class="full-size-img" v-bind:src="currentImgUrl" style="width: 70%"
-      >
+      <a class="a-tag" v-bind:href="''+linkToDownload+''" target="_blank"><img class="full-size-img" v-bind:src="currentImgUrl" 
+      ></a>
       <button v-on:click="toggleOpenSingPhoto" class="close-single-photo-btn">&#215;</button>
     </div>
 </div>

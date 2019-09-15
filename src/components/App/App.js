@@ -19,13 +19,15 @@ export default {
   methods: {
     runSearching(param) {
       fetchImages(param)
-        .then(images => {this.images = images.results; console.log(images.results)})      
-    }
+        .then(images => {this.images = images.results; console.log(images)});
+    },
+
   },
 
   created() {
     fetchRandomImages()
     .then(images => this.images = images)
+
   }
 
 }

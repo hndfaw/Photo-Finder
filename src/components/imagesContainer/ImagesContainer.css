@@ -50,9 +50,19 @@
   margin-left: auto;
   margin-right: auto;  
   border: 1px solid #fff;
+  max-height: 90vh;
 }
 
 .download-btn {
   width: 200px;
   height: 200px;
+}
+
+.a-tag {
+  display: flex;
+  justify-content: center;
+}
+
+.image-likes {
+  font-size: 30px;
 }

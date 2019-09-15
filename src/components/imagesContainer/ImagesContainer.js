@@ -14,9 +14,6 @@ export default {
       this.isPhotoOpened = !this.isPhotoOpened;
       this.currentImgUrl = params.url,
       this.linkToDownload = params.link
-    },
-    downloadPhoto() {
-      return this.linkToDownload
     }
   }
 }
