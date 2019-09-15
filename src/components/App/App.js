@@ -1,4 +1,4 @@
-import { fetchFilms, fetchImages } from '../../api/apiCalls';
+import { fetchImages } from '../../api/apiCalls';
 import ImagesContainer from '../imagesContainer/ImagesContainer.vue';
 import FindImages from '../findImages/FindImages.vue'
 
@@ -18,9 +18,8 @@ export default {
 
   methods: {
     runSearching(param) {
-      // fetchFilms().then(images => this.images = images.results)
       fetchImages(param)
-        .then(images => this.images = images.results)      
+        .then(images => {this.images = images.results; console.log(images.results)})      
     }
   }
 
