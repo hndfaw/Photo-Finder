@@ -15,14 +15,17 @@ export default {
   data() {
     return {
       images: [],
-      pagesFound: 0,
-      photosFound: 0
+      pagesFound: 10,
+      photosFound: 0,
+      currentPage: 1,
+      params: {}
     }
   },
 
   methods: {
-    runSearching(param) {
-      fetchImages(param)
+    runSearching(params) {
+      this.params = params
+      fetchImages(params, this.currentPage)
         .then(images => {
           this.images = images.results;
           this.pagesFound = images.total_pages;
@@ -30,6 +33,19 @@ export default {
           console.log(images)
         });
     },
+    updatePage(change) {
+      if(change === "increment") {
+        if(this.currentPage < this.pagesFound) {
+          this.currentPage++;
+          fetchImages(this.params, this.currentPage)
+        }
+      } else {
+        if(this.currentPage > 1) {
+          this.currentPage--
+          fetchImages(this.params, this.currentPage)
+        }
+      }
+    }
 
   },
 
