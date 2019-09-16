@@ -15,7 +15,7 @@ export default {
   data() {
     return {
       images: [],
-      pagesFound: 10,
+      pagesFound: 0,
       photosFound: 0,
       currentPage: 1,
       params: {}
@@ -30,7 +30,7 @@ export default {
           this.images = images.results;
           this.pagesFound = images.total_pages;
           this.photosFound = images.total;
-          console.log(images)
+          this.currentPage = 1
         });
     },
     updatePage(change) {
@@ -38,11 +38,33 @@ export default {
         if(this.currentPage < this.pagesFound) {
           this.currentPage++;
           fetchImages(this.params, this.currentPage)
+            .then(images => {
+              this.images = images.results;
+            });
         }
-      } else {
+      } else if(change === "decrement") {
         if(this.currentPage > 1) {
           this.currentPage--
           fetchImages(this.params, this.currentPage)
+            .then(images => {
+              this.images = images.results;
+            });
+        }
+      } else if(change === "first") {
+        if(this.currentPage !== 1) {
+          this.currentPage = 1
+          fetchImages(this.params, this.currentPage)
+            .then(images => {
+              this.images = images.results;
+            });
+        }
+      } else if(change === "last") {
+        if(this.currentPage !== this.pagesFound) {
+          this.currentPage = this.pagesFound
+          fetchImages(this.params, this.currentPage)
+            .then(images => {
+              this.images = images.results;
+            });
         }
       }
     }
