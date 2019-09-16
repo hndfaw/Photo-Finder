@@ -29,6 +29,7 @@
   padding: 0 5px;
   background: rgba(255, 255, 255, 0.418);
   border: none;
+  position: relative;
 }
 
 .search-bar-container:focus-within {
@@ -81,4 +82,11 @@
 
 .logo-finder {
   color: rgb(236, 236, 58);
+}
+
+.search-icon {
+  height: 60%;
+  position: absolute;
+  left: 15px;
+  z-index: -1;
 }
