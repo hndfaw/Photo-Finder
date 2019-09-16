@@ -1,5 +1,5 @@
 <template>
-  <footer id="footer" v-bind:class="{'hide-footer': !props.pagesFound}">
+  <footer id="footer" v-bind:class="{'hide-footer': props.pagesFound < 2}">
     <div class="pages-footer">
       <button @click="submitChangePage('first')" class="first-last-btn first-btn">First</button>
       <button @click="submitChangePage('decrement')" class="prev-next-btn">Previous</button>

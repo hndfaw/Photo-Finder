@@ -25,12 +25,13 @@ export default {
   methods: {
     runSearching(params) {
       this.params = params
-      fetchImages(params, this.currentPage)
+      this.currentPage = 1
+      fetchImages(params, 1)
         .then(images => {
           this.images = images.results;
           this.pagesFound = images.total_pages;
           this.photosFound = images.total;
-          this.currentPage = 1
+          
         });
     },
     updatePage(change) {
