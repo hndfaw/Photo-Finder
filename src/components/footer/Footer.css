@@ -5,7 +5,7 @@
 
 .pages-footer {
   height: 100%;
-  width: 500px;
+  width: 550px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -17,35 +17,59 @@
   width: 100px;
   height: 30px;
   cursor: pointer;
-  background: rgb(51, 83, 94);
+  background: rgba(51, 83, 94, 0.733);
   color: #fff;
   font-size: 12px;
   border: none;
-  border: 1px solid rgb(51, 83, 94);
   outline: none;
+}
+
+.prev-next-btn:hover {
+  background: rgba(51, 83, 94, 0.883);
+}
+
+.prev-next-btn:active {
+  background: rgb(51, 83, 94);
 }
 
 .first-last-btn {
   width: 90px;
   height: 30px;
   cursor: pointer;
-  background: rgb(51, 83, 94);
+  background: rgba(51, 83, 94, 0.733);
   color: #fff;
   font-size: 12px;
   border: none;
-  border: 1px solid rgb(51, 83, 94);
   outline: none;
 }
 
+.first-last-btn:hover {
+  background: rgba(51, 83, 94, 0.883);
+}
+
+.first-last-btn:active {
+  background: rgb(51, 83, 94);
+}
+
 .hide-footer {
-  /* display: none; */
+  display: none;
 }
 
 .number-of-pages {
   font-size: 20px;
   padding-top: 4px;
-  width: 100px;
+  width: 140px;
   text-align: center;
   height: 30px;
   border: 1px solid rgb(51, 83, 94);
+}
+
+.first-btn {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.last-btn {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
