@@ -20,7 +20,7 @@
 
 .search-bar-container {
   border: 1px solid gray;
-  height: 100%;
+  height: 85%;
   width: 450px;
   display: flex;
   justify-content: space-between;
@@ -29,6 +29,7 @@
   padding: 0 5px;
   background: rgba(255, 255, 255, 0.418);
   border: none;
+  position: relative;
 }
 
 .search-bar-container:focus-within {
@@ -37,7 +38,7 @@
 
 .search-input {
   height: 100%;
-  width: 220px;
+  width: 228px;
   outline: none;
   border: none;
   font-size: 15px;
@@ -53,7 +54,7 @@
   outline: none;
   cursor: pointer;
   font-size: 13px;
-  border-radius: 15px 50px 50px 15px;
+  border-radius: 20px 50px 50px 20px;
   border: none;
   color: #fff;
   background: rgb(51, 83, 94);
@@ -81,4 +82,15 @@
 
 .logo-finder {
   color: rgb(236, 236, 58);
+}
+
+.search-icon {
+  height: 60%;
+  position: absolute;
+  left: 15px;
+  z-index: -1;
+}
+
+.hide {
+  display: none;
 }

@@ -4,6 +4,7 @@
     <form @submit.prevent="submitSearch" class="find-images-form">
       <div class="search-bar-container">
         <input v-model="searchTerm" type="text" name="searchTerm" class="search-input">
+        <img src="../../assets/magnifying-glass.png" class="search-icon" v-bind:class="{'hide': searchTerm.length}">
         <select v-model="orientation" name="" id="orientation">
           <option value="landscape">Landscape</option>
           <option value="portrait">Portrait</option>
