@@ -2,7 +2,7 @@
 <div>
     <div id="images-container">
         <div class="image" v-for="image in images" :key="image.id">
-          <img v-bind:src="image.urls.small" style="width: 250px" 
+          <img v-bind:src="image.urls.small" class="small-size-img" 
           v-on:click="toggleOpenSingPhoto({'url': image.urls.regular, 'link': image.links.download})"
           >
         </div>

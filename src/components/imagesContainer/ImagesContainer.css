@@ -5,10 +5,7 @@
   margin-top: 65px;
 }
 
-.image {
-  margin: 10px;
-  cursor: pointer;
-}
+
 
 .close-single-photo-btn {
   width: 40px;
@@ -65,4 +62,17 @@
 
 .image-likes {
   font-size: 30px;
+}
+
+.small-size-img {
+  width: 250px
+}
+
+.small-size-img:hover {
+  box-shadow: 0 0 5px 2px rgba(114, 108, 108, 0.582);
+}
+
+.image {
+  margin: 10px;
+  cursor: pointer;
 }
