@@ -72,3 +72,13 @@
   margin: 10px;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 540px) {
+  .image {
+    display: flex;
+    justify-content: center;
+  }
+  .small-size-img {
+    width: 100%;
+  }
+}
