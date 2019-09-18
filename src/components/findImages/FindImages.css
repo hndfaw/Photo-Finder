@@ -101,6 +101,7 @@
   #find-images {
     flex-direction: column;
     height: 80px;
+    padding: 0;
   }
 
   .search-bar-container {
