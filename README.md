@@ -4,6 +4,7 @@
 Hindreen Abdullah
 
 ## About
+Photo Finder is a web app that helps users finding high-quality photos for free to use in their projects. The app gives the option of choosing the orientation of photos users are looking for; landscape, prostrate, and square. For this app, I'm  [Unsplash](https://unsplash.com) API to get photos.
 
 ## Project Tech Emphasis
 1. Vue JS
