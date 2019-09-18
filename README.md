@@ -6,7 +6,8 @@ Hindreen Abdullah
 ## About
 
 ## Project Tech Emphasis
-Vue JS
+1. Vue JS
+2. Unsplash API
 
 [Go to website!](https://hndfaw.github.io/Photo-Finder/)
 
