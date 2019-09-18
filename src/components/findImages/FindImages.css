@@ -95,3 +95,20 @@
 .hide {
   display: none;
 }
+
+
+@media only screen and (max-width: 850px) {
+  #find-images {
+    flex-direction: column;
+    height: 80px;
+  }
+
+  .search-bar-container {
+    margin-bottom: 8px;
+    
+  }
+
+  .find-images-form {
+    margin-right: 0;
+  }
+}
