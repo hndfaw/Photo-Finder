@@ -1,6 +1,7 @@
 <template>
   <div id="find-images">
-    <h1 class="logo">PHOTO<span class="logo-finder">FINDER</span></h1>
+    <img src="../../assets/wene.png" class="logo" >
+    <!-- <h1 class="logo">PHOTO<span class="logo-finder">FINDER</span></h1> -->
     <form @submit.prevent="submitSearch" class="find-images-form">
       <div class="search-bar-container">
         <input v-model="searchTerm" type="text" name="searchTerm" class="search-input">
