@@ -10,12 +10,11 @@ Photo Finder is a web app that helps users finding high-quality photos for free 
 1. Vue JS
 2. Unsplash API
 
-[Go to website!](https://hndfaw.github.io/Photo-Finder/)
 
 ## Website Screenshot
 
 <kbd>
-<img width="1427" alt="Screen Shot 2019-09-17 at 7 18 22 PM" src="https://user-images.githubusercontent.com/45321668/65095836-fff79380-d97f-11e9-9661-62cf01ab24a3.png">
+<img width="1425" alt="Screen Shot 2019-12-14 at 12 51 55 PM" src="https://user-images.githubusercontent.com/45321668/70852673-2902c400-1e9c-11ea-9f05-912e8b1b1f04.png">
 </kbd>
 
 
