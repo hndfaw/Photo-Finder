@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgb(70, 58, 58);
-  background: rgb(51, 83, 94);
+  background: rgb(42, 72, 82);
   position: fixed;
   top: 0;
   left: 0;
@@ -79,6 +79,7 @@
 .logo {
   color: #fff;
   margin-left: 20px;
+  height: 90%
 }
 
 .logo-finder {
@@ -94,4 +95,35 @@
 
 .hide {
   display: none;
+}
+
+
+@media only screen and (max-width: 850px) {
+  #find-images {
+    flex-direction: column;
+    height: 80px;
+    padding: 0;
+  }
+
+  .search-bar-container {
+    margin-bottom: 8px;
+    
+  }
+
+  .find-images-form {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .find-images-form {
+    width: 95%;
+  }
+  .search-input {
+    width: 60%;
+  }
+
+  #orientation {
+    margin-right: 5px;
+  }
 }

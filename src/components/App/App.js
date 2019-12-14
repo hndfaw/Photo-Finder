@@ -76,7 +76,6 @@ export default {
     fetchRandomImages()
     .then(images => {
       this.images = images;
-      console.log(images)
     })
 
   }
